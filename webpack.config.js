@@ -4,10 +4,10 @@ const path = require("path");
 const config = {
   mode: "production",
   entry: {
-    app: "./public/assets/index.js",
+    app: "./client/assets/js/index.js",
   },
   output: {
-    path: __dirname + "/public/dist",
+    path: __dirname + "/client/dist",
     filename: "index.bundle.js"
   },
   plugins: [
@@ -21,9 +21,9 @@ const config = {
       theme_color: "#ffffff",
       start_url: "/",
       icons: [{
-        src: path.resolve("public/assets/images/icon-515x512.png"),
+        src: path.resolve("client/assets/icons/icon-512x512.png"),
         sizes: [192, 512],
-        destination: path.join("assets", "images")
+        destination: path.join("assets", "icons")
       }]
     })
   ],
